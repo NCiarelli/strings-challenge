@@ -1,0 +1,19 @@
+<h1>Strings Challenge</h1>
+<form #form=ngForm (ngSubmit)="onSubmit(form)">
+  <label for="user-string">
+    <input type="text" name="user-string" id="user-string" ngModel>
+  </label>
+  <button type="submit">Submit String</button>
+</form>
+<section>
+  <h2>Reverse</h2>
+  <p>{{reverseString}}</p>
+  <h2>Title Case</h2>
+  <p>{{titleString}}</p>
+  <h2>Is the String a Palindrome?</h2>
+  <p>{{isPalindrome(userString) ? "Yes" : "No"}}</p>
+  <h2>Vowel Count</h2>
+  <p>{{vowelCount}}</p>
+  <h2>Most Common Character</h2>
+  <p>{{commonCharacter}}</p>
+</section>
